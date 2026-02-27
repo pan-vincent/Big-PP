@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5x5 Grid</title>
+    <link rel="stylesheet" href="panel.css">
+    <link rel="stylesheet" href="menuNew.css">
+    <link rel="stylesheet" href="game.css">
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        font-family: Helvetica;
+    }
+    </style>
+</head>
+<body>
+    <div id="panel-wrapper">
+        <div id="panel-scroll">
+            <img src="../res/miku.jpg">
+            <img src="../res/teto.jpg">
+            <img src="../res/neru.jpg">
+            <img src="../res/miku.jpg">
+            <img src="../res/teto.jpg">
+            <img src="../res/neru.jpg">
+        </div>
+        <div id="panel-menu">
+            <button onclick="gameMenuNew()" type="button">New</button>
+            <button onclick="gameMenuOpen()" type="button">Open</button>
+            <button onclick="gameMenuCopy()" type="button">Copy</button>
+        <div>
+    </div>
+    <div id="game_container">
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
