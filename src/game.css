@@ -1,3 +1,19 @@
 #game_container{
-    margin-top: 75px;
+    margin-top: calc(var(--height-wrapper) + 1%);
+    display: flex;
+    width: 100%;
+}
+#game_container table{
+    border-collapse: collapse;
+}
+#game_container table tr{
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    
+}
+.cell{
+    flex: 0 0 auto;
+    background-color: var(--color-paper);
+    border: 1.5px black solid;
 }

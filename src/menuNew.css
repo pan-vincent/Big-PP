@@ -1,7 +1,7 @@
 #game-create-container{
     width: 30%;
     left: 35%;
-    top: 20%;
+    margin-top: 5%;
     position: relative;
 }
 #game-create-container *{
@@ -21,7 +21,8 @@
     width: 100%;
     border-radius: 0;
     font-size: 100%;
-    background-color: white;
+    background-color: var(--color-paper);
+    outline: none;
 }
 #game-create-container button:active{
     filter: brightness(0.9);

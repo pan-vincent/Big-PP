@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5x5 Grid</title>
+    <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="panel.css">
     <link rel="stylesheet" href="menuNew.css">
     <link rel="stylesheet" href="game.css">
@@ -12,6 +13,10 @@
         margin:0;
         padding:0;
         font-family: Helvetica;
+    }
+    br{
+        
+        -select: none;
     }
     </style>
 </head>
@@ -26,14 +31,19 @@
             <img src="../res/neru.jpg">
         </div>
         <div id="panel-menu">
-            <button onclick="gameMenuNew()" type="button">New</button>
-            <button onclick="gameMenuOpen()" type="button">Open</button>
-            <button onclick="gameMenuCopy()" type="button">Copy</button>
-        <div>
+            <button id='menu-button-new'onclick="menu('new')" type="button">New</button>
+            <button id='menu-button-open'onclick="menu('open')" type="button">Open</button>
+            <button id='menu-button-copy'onclick="menu('copy')" type="button">Copy</button>
+            <button onclick="zoom('0')" type="button">Zoom</button>
+            <button style="width: 30px;" onclick="zoom('-')" type="button">-</button>
+            <button style="width: 30px;" onclick="zoom('+')" type="button">+</button>
+        </div>
     </div>
+    
     <div id="game_container">
     </div>
     
-    <script src="index.js"></script>
+    <script src="menu.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
