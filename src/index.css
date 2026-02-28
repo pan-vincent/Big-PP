@@ -1,0 +1,14 @@
+:root{
+    --color-paper: #efeffb;
+    --color-ink:  #003344;
+    --color-sticky-notes-pink: #f0adb0;
+    --color-sticky-notes-red: #f5c2ab;
+    --color-sticky-notes-yellow: #fae0ad;
+    --color-sticky-notes-green: #c6d7b2;
+    --color-sticky-notes-blue: #c4def0;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: Helvetica;
+}

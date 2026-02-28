@@ -1,49 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5x5 Grid</title>
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="panel.css">
-    <link rel="stylesheet" href="menuNew.css">
-    <link rel="stylesheet" href="game.css">
-    <style>
-    *{
-        margin:0;
-        padding:0;
-        font-family: Helvetica;
-    }
-    br{
-        
-        -select: none;
-    }
-    </style>
-</head>
-<body>
-    <div id="panel-wrapper">
-        <div id="panel-scroll">
-            <img src="../res/miku.jpg">
-            <img src="../res/teto.jpg">
-            <img src="../res/neru.jpg">
-            <img src="../res/miku.jpg">
-            <img src="../res/teto.jpg">
-            <img src="../res/neru.jpg">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Big-PP Game</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="panel.css" />
+    </head>
+    <body>
+        <div id="panel">
+            <h1 id="panel-title">Big-PP</h1>
+            <div id="panel-brochure">
+                <h3>
+                    Big Paper Politicians (Big PP for short) is a turn-based
+                    game played on a sheet of paper with a square grid. It can
+                    be played with 2 or more players (the more players, the
+                    better). When the game starts, every player has to follow all the rules. You can bend over as long as you establish peace with someone.
+                </h3>
+            </div>
+            <div id="panel-option">
+                <div style="background-color: var(--color-sticky-notes-pink)">
+                    <h2>Create Battlefield</h2>
+                    <img src="../res/miku_cat_1.jpg" />
+                </div>
+                <div style="background-color: var(--color-sticky-notes-yellow)">
+                    <h2>Join War</h2>
+                    <img src="../res/miku_cat_2.jpg" />
+                </div>
+                <div style="background-color: var(--color-sticky-notes-green)">
+                    <h2>Test</h2>
+                    <img src="../res/miku_cat_3.jpg" />
+                </div>
+                <div style="background-color: var(--color-sticky-notes-blue)">
+                    <h2>Under Construction</h2>
+                    <img src="../res/miku_cat_4.jpg" />
+                </div>
+            </div>
         </div>
-        <div id="panel-menu">
-            <button id='menu-button-new'onclick="menu('new')" type="button">New</button>
-            <button id='menu-button-open'onclick="menu('open')" type="button">Open</button>
-            <button id='menu-button-copy'onclick="menu('copy')" type="button">Copy</button>
-            <button onclick="zoom('0')" type="button">Zoom</button>
-            <button style="width: 30px;" onclick="zoom('-')" type="button">-</button>
-            <button style="width: 30px;" onclick="zoom('+')" type="button">+</button>
-        </div>
-    </div>
-    
-    <div id="game_container">
-    </div>
-    
-    <script src="menu.js"></script>
-    <script src="game.js"></script>
-</body>
+        <div style="height: 100px" />
+    </body>
 </html>
