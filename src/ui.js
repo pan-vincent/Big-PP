@@ -41,22 +41,21 @@ const UI = {
       });
 
       options.forEach((option) => {
+        const children = option.children;
         option.handler("click", (e) => {
-          const undo = option.get("activated");
+          const undo = children[0].get("innerText")!=children[0].get("backup");
           for (let j = 0; j < options.length; j++) {
             const [h2, img] = options[j].children;
             h2.text(h2.get("backup"));
             img.src(img.get("backup")); 
-            option.set("activated", false);
           }
           if(undo){
             UI.do('clear');
             return;
           }
-          const [h2, img] = option.children;
+          const [h2, img] = children;
           h2.text("Home");
           img.src("../res/miku_home.jpg");
-          option.set("activated", true);
           UI.do(option.get("backup"));
         });
       });
